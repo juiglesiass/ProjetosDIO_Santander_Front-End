@@ -1,0 +1,310 @@
+<!-- 
+A ideia deste Desafio de Projeto é elaborar um website, utilizando uma estrutura bem básica, utilizando tags aprendidas durante as aulas práticas:
+Utilizar todas as tags explicadas nas aulas: <h1> até <h6>, <p>, <mark>, <small>, <i>, <u>, <strong>, <ol>, <ul>, <li>, <a>, <hr>, <sub>, <sup>, <blockquote>;
+Utilizar novas tags sugeridas: <font>, <del>, <p>, <abbr> (a ideia é buscar estas tags na internet, entender como ela funciona e utilizar no texto).
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags HTML</title>
+    <style>
+        table {
+            -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+            box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+        }
+
+        table thead th {
+            background-color: black;
+            color: white;
+        }
+
+        table tfoot {
+            background-color: lightgray;
+        }
+
+        table tbody tr:nth-child(even) td {
+            background-color: #f1f1f1;
+        }
+
+        table tbody tr:hover td {
+            background-color: #e9e9e9;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>TAGS HTML</h1>
+    </header>
+
+    <main>
+        <section id="projeto">
+            <p>Este projeto foi desenvolvido por Julia Iglesias como parte do desafio de projeto da DIO, com o objetivo
+                de
+                praticar as tags HTML aprendidas nas aulas práticas.</p>
+            <p>Para mais informações, visite meu perfil no GitHub: <a href="https://github.com/juiglesiass"
+                    target="_blank">Julia Iglesias</a></p>
+        </section>
+
+        <hr>
+
+        <section id="indice">
+            <h2>Índice</h2>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#formularios">Formulários</a></li>
+                <li><a href="#formatacao">Formatação HTML</a></li>
+                <li><a href="#midia">Tags de Mídia</a></li>
+                <li><a href="#tabelas">Tabelas HTML</a></li>
+                <li><a href="#semantico">HTML Semântico</a></li>
+                <li><a href="#referencias">Referências</a></li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="introducao">
+            <h2>Introdução</h2>
+            <small><a href="#indice">(Voltar ao índice)</a></small>
+            <p>HTML (HyperText Markup Language) é a linguagem padrão para criar páginas da web. Ela fornece a
+                <u>estrutura</u>
+                básica
+                para o conteúdo da web, permitindo que os desenvolvedores organizem texto, imagens e outros elementos de
+                forma
+                hierárquica.
+            </p>
+            <p>O HTML é composto por uma série de elementos, que são representados por <strong>"tags"</strong>. Essas
+                tags são usadas
+                para
+                definir a estrutura e o layout do conteúdo da página.</p>
+            <h3>Exemplo de Tags Básicas</h3>
+            <p>Algumas das tags mais comuns incluem:</p>
+            <ul>
+                <li><strong>&lt;h1&gt;</strong> a <strong>&lt;h6&gt;</strong>: Definem títulos de diferentes tamanhos,
+                    deste
+                    modo:</li>
+                <ol>
+                    <li>
+                        <h1>Isto é um <u>h1</u></h1>
+                    </li>
+                    <li>
+                        <h2>Isto é um <u>h2</u></h2>
+                    </li>
+                    <li>
+                        <h3>Isto é um <u>h3</u></h3>
+                    </li>
+                    <li>
+                        <h4>Isto é um <u>h4</u></h4>
+                    </li>
+                    <li>
+                        <h5>Isto é um <u>h5</u></h5>
+                    </li>
+                    <li>
+                        <h6>Isto é um <u>h6</u></h6>
+                    </li>
+                </ol>
+                <li><strong>&lt;p&gt;</strong>: Define um parágrafo.</li>
+                <li><strong>&lt;small&gt;</strong>: Define texto menor.</li>
+                <li><strong>&lt;ol&gt;</strong> e <strong>&lt;ul&gt;</strong>: Definem listas ordenadas e não ordenadas,
+                    respectivamente, onde ordenadas são listadas por números e não ordenadas por marcadores.</li>
+                <li><strong>&lt;li&gt;</strong>: Define um item de lista.</li>
+                <li><strong>&lt;a&gt;</strong>: Define um hyperlink.</li>
+                <li><strong>&lt;hr&gt;</strong>: Insere uma linha horizontal.</li>
+                <li><strong>&lt;title&gt;</strong>: Define o título da página, que aparece na aba do navegador.</li>
+                <li><strong>&lt;del&gt;</strong>: Define texto que foi <del>removido deste modo.</del></li>
+                <li><strong>&lt;abbr&gt;</strong>: Define o significado de uma abreviação ou sigla, como <abbr
+                        title="HyperText Markup Language">HTML</abbr>, ao passar o mouse em cima o significado é
+                    exibido.
+                </li>
+                <li><strong>&lt;div&gt;</strong>: Usada para definir divisões ou seções em um documento, servindo como
+                    um contêiner genérico para agrupar elementos. É frequentemente utilizada para estruturar layouts,
+                    aplicar estilos CSS ou manipular elementos com JavaScript, especialmente quando não há um elemento
+                    semântico mais específico disponível.</li>
+                <li><strong>&lt;span&gt;</strong>: Usada para agrupar elementos inline (como texto) para estilização ou
+                    manipulação com CSS e JavaScript</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="formularios">
+            <h2>Formulários HTML</h2>
+            <small><a href="#indice">(Voltar ao índice)</a></small>
+            <p>Os formulários HTML são usados para coletar dados do usuário. Eles podem conter uma variedade de
+                elementos,
+                como campos de texto, caixas de seleção e botões de envio.</p>
+            <p>Algumas tags comuns usadas em formulários incluem:</p>
+            <ul>
+                <li><strong>&lt;form&gt;</strong>: Engloba todos os elementos do formulário.</li>
+                <li><strong>&lt;input&gt;</strong>: Define um campo de entrada. Os atributos mais utilizados são:</li>
+                <ul>
+                    <li><strong>&lt;input type="checkbox"&gt;</strong>: Define uma caixa de seleção.</li>
+                    <li><strong>&lt;input type="radio"&gt;</strong>: Define um botão de opção.</li>
+                    <li><strong>&lt;input type="text"&gt;</strong>: Define um campo de texto.</li>
+                    <li><strong>&lt;input type="password"&gt;</strong>: Define um campo de senha, onde os caracteres são
+                        ocultos.</li>
+                    <li><strong>&lt;input type="email"&gt;</strong>: Define um campo de entrada de e-mail.</li>
+                    <li><strong>&lt;input type="number"&gt;</strong>: Define um campo de entrada numérica.</li>
+                    <li><strong>&lt;input type="date"&gt;</strong>: Define um campo de entrada de data.</li>
+                    <li><strong>&lt;input type="file"&gt;</strong>: Define um campo para upload de arquivos.</li>
+                </ul>
+                <li><strong>&lt;label&gt;</strong>: Define um rótulo para um elemento de formulário.</li>
+                <li><strong>&lt;textarea&gt;</strong>: Define uma área de texto.</li>
+                <li><strong>&lt;select&gt;</strong>: Define uma lista suspensa.</li>
+                <li><strong>&lt;button&gt;</strong>: Define um botão.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="formatacao">
+            <h2>Formatação HTML</h2>
+            <small><a href="#indice">(Voltar ao índice)</a></small>
+            <p>A Formatação HTML inclui as seguintes tags:</p>
+            <ul>
+                <li><strong>&lt;mark&gt;</strong>: Destaca texto, como <mark>este texto destacado</mark>.</li>
+                <li><strong>&lt;i&gt;</strong>: Define texto em itálico, como <i>este texto em itálico</i>.</li>
+                <li><strong>&lt;u&gt;</strong>: Define texto sublinhado, como <u>este texto sublinhado</u>.</li>
+                <li><strong>&lt;strong&gt;</strong>: Define texto em negrito, como <strong>este texto em
+                        negrito</strong>.
+                </li>
+                <li><strong>&lt;sub&gt;</strong> e <strong>&lt;sup&gt;</strong>: Definem texto subescrito e sobrescrito,
+                    respectivamente, deste modo:</li>
+                <ul>
+                    <li>Isto é um <strong><sub>sub</sub></strong></li>
+                    <li>Isto é um <strong><sup>sup</sup></strong></li>
+                </ul>
+                <li><strong>&lt;blockquote&gt;</strong>: Define uma citação em bloco.</li>
+                <blockquote>
+                    <p>Esta é uma citação em bloco.</p>
+                </blockquote>
+                <li><strong>&lt;font&gt;</strong>: Define a <font face="arial">fonte</font> ou a <font color="red">cor
+                    </font> do texto</font> (embora seja
+                    <strong>obsoleta</strong> em HTML5, ainda é usada em alguns casos).
+                </li>
+                <li><strong>&lt;fieldset&gt;</strong>: Agrupa elementos de formulário por seção: <fieldset>
+                        <legend>Título da Seção</legend> Deste modo
+                    </fieldset>
+                </li>
+            </ul>
+
+        </section>
+
+        <hr>
+
+        <section id="midia">
+            <h2>Tags de Mídia</h2>
+            <small><a href="#indice">(Voltar ao índice)</a></small>
+            <p>As tags de mídia em HTML são usadas para incorporar conteúdo multimídia, como imagens, vídeos e áudio.
+                Algumas das principais tags de mídia incluem:</p>
+            <ul>
+                <li><strong>&lt;img&gt;</strong>: Usada para incorporar imagens.</li>
+                <li><strong>&lt;video&gt;</strong>: Usada para incorporar vídeos.</li>
+                <li><strong>&lt;audio&gt;</strong>: Usada para incorporar áudio.</li>
+                <li><strong>&lt;iframe&gt;</strong>: Define um quadro inline, que serve para incorporar conteúdos
+                    externos,
+                    como páginas HTML, vídeos do YouTube e mapas do Google.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="tabelas">
+            <h2>Tabelas HTML</h2>
+            <small><a href="#indice">(Voltar ao índice)</a></small>
+            <p>As tabelas são usadas para organizar dados em linhas e colunas. As principais tags utilizadads numa
+                tabela
+                HTML são as seguintes:</p>
+            <ul>
+                <li><strong>&lt;table&gt;</strong>: Engloba os elementos de uma tabela.</li>
+                <li><strong>&lt;thead&gt;</strong>: Agrupa o cabeçalho da tabela.</li>
+                <li><strong>&lt;tbody&gt;</strong>: Agrupa o corpo da tabela.</li>
+                <li><strong>&lt;tfoot&gt;</strong>: Agrupa o rodapé da tabela.</li>
+                <li><strong>&lt;tr&gt;</strong>: Define uma linha na tabela.</li>
+                <li><strong>&lt;th&gt;</strong>: Define um cabeçalho de coluna.</li>
+                <li><strong>&lt;td&gt;</strong>: Define uma célula da tabela.</li>
+                <li><strong>&lt;caption&gt;</strong>: Define um título para a tabela.</li>
+            </ul>
+            <table>
+                <caption>Exemplo de uma tabela:</caption>
+                <thead>
+                    <tr>
+                        <th>Cabeçalho 1</th>
+                        <th>Cabeçalho 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dado 1</td>
+                        <td>Dado 2</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Rodapé da Tabela</td>
+                    </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="semantico">
+            <h2>HTML Semântico</h2>
+            <small><a href="#indice">(Voltar ao índice)</a></small>
+            <p>O HTML semântico é uma abordagem que utiliza tags HTML para descrever o significado do conteúdo, em vez
+                de
+                apenas sua aparência. Isso melhora a acessibilidade e a SEO (Search Engine Optimization), ou seja,
+                contribui para otimizar o posicionamento do site em mecanismos de buscas.</p>
+            <p>Algumas tags semânticas incluem:</p>
+            <ul>
+                <li><strong>&lt;header&gt;</strong>: Define o cabeçalho de um documento ou seção.</li>
+                <li><strong>&lt;main&gt;</strong>: Define o conteúdo principal de um documento.</li>
+                <li><strong>&lt;footer&gt;</strong>: Define o rodapé de um documento ou seção.</li>
+                <li><strong>&lt;figure&gt;</strong>: Define conteúdo ilustrativo, como imagens, gráficos ou diagramas,
+                    onde podemos adicionar um figcaption que é um texto relacionado à imagem.</li>
+                <li><strong>&lt;aside&gt;</strong>: Define conteúdo relacionado, mas não essencial, ao conteúdo
+                    principal.</li>
+                <li><strong>&lt;nav&gt;</strong>: Define uma seção de navegação, geralmente composta por uma lista nao
+                    ordenada.</li>
+                <li><strong>&lt;article&gt;</strong>: Define um conteúdo independente e autocontido.</li>
+                <li><strong>&lt;section&gt;</strong>: Define uma seção genérica de um documento.</li>
+
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="referencias">
+            <h2>Referências</h2>
+            <small><a href="#indice">(Voltar ao índice)</a></small>
+            <p>Se você quiser aprender mais sobre HTML na prática, aqui está alguns conteúdos que recomendo explorar:
+            </p>
+            <ul>
+                <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools - HTML Tutorial</a></li>
+                <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">MDN Web Docs - HTML</a>
+                </li>
+            </ul>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Fhy-5CtVkiM?si=SbzadQwBJv_oJz0C"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ejkb_YpuHWs?si=vMfumQSsQo-w0wOM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2025 Julia Iglesias. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
