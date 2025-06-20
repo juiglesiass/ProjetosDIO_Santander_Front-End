@@ -15,3 +15,7 @@ Sigam as intruções da chamada do vídeo. Acredito que por lá, ficará mais f�
 ## Links úteis
 - [Download do NVDA](https://www.nvaccess.org/download/)
 - [Wikipedia](https://pt.wikipedia.org/)
+
+Para acessar o projeto basta acessar o link abaixo:
+
+https://juiglesiass.github.io/ProjetosDIO_Santander_Front-End/recriando-wikipedia-desafio2/
