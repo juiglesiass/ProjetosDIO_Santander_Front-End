@@ -164,12 +164,4 @@ span {
     border-bottom: 1px solid #33A8DB;
     border-radius: 57px;
     margin-top: 24px;
-    width: 530px;
-    height: 52px;
-    max-width: 792px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: inset -3px 5px 6px 2px rgba(0, 0, 0, 0.6);
 }
