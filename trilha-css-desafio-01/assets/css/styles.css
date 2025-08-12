@@ -161,7 +161,38 @@ span {
 }
 
 #professional-challenges {
-    border-bottom: 1px solid #33A8DB;
-    border-radius: 57px;
-    margin-top: 24px;
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+#professional-challenges img {
+  margin: 32px 0;
+}
+
+#professional-challenges p {
+  font-size: 1rem;
+}
+
+footer {
+    border-top: 1px solid #33A8DB;
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+    padding: 60px 0;
+    text-align: center;
+}
+
+footer .dio-logo {
+  width: 300px;
+}
+
+footer a {
+  color: #33A8DB;
+  font-weight: bold;
+  text-decoration: none;
 }
