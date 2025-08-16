@@ -1,0 +1,140 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #ffffff;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+i {
+    font-size: 22px;
+    text-align: center;
+}
+
+#menu-left img {
+    width: auto;
+    height: 22px;
+}
+
+#menu-left {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+
+#menu-center {
+    background-color: #F8F8F8;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 40px;
+    border: 1px solid #CCCCCC;
+}
+
+#menu-center input {
+    width: 87%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    border: none;
+    border-right: 1px solid #CCCCCC;
+    padding-left: 20px;
+}
+
+#menu-center i {
+    margin: auto;
+}
+
+#menu-right img {
+    width: 22px;
+    height: 22px;
+}
+
+#menu-right .avatar {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+#menu-right {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    align-items: center;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 30px 0 75px;
+}
+
+#video-player {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    gap: 20px;
+}
+
+#video-player iframe {
+    width: 100%;
+}
+
+.channel-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.channel-info div{
+    display: flex;
+}
+
+.channel div {
+    display: flex;
+    flex-direction: column;
+}
+
+.channel img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+button {
+    background-color: #CC0000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 2px;
+    padding: 12px 36px;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 170px;
+    height: 40px;
+    font-size: 14px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.thumb-info {
+    display: flex;
+    justify-content: space-between;
+}
