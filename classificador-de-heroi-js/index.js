@@ -27,8 +27,9 @@ Se XP for maior ou igual a 10.001 = Radiante
 Ao final deve se exibir uma mensagem:
 "O Herói de nome **{nome}** está no nível de **{nivel}**"
 */
+const prompt = require('prompt-sync')();
 
-let nome = prompt("Digite seu nome: ");
+let nome = prompt("Digite o nome do heroi: ");
 let xp = Number(prompt("Digite sua quantidade de experiência (XP): "));
 let nivel;
 
