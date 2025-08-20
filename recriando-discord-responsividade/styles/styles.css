@@ -20,6 +20,11 @@ section {
     align-items: center;
     justify-content: center;
     padding: 40px 150px;
+    gap: 16px;
+}
+
+section div {
+    max-width: 345px;
 }
 
 section img {
@@ -44,8 +49,8 @@ h2 {
     font-size: 2.5rem;
     margin-bottom: 16px;
     font-weight: 800;
-    min-width: 320px;
     text-align: left;
+    padding-right: 5px;
 }
 
 p {
@@ -128,7 +133,7 @@ p {
 }
 
 .section-tecnologia p {
-    min-width: 800px;
+    max-width: 800px;
     text-align: center;
 }
 
@@ -138,4 +143,55 @@ footer {
     display: flex;
     justify-content: center;
     padding: 35px 0;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        padding: 25px 30px;
+    }
+
+    .header-content {
+        padding: 70px 24px;
+    }
+
+    .header-content h1 {
+        font-size: 2rem;
+        text-align: left;
+        max-width: 51%;
+        align-self: flex-start;
+    }
+    
+    .header-content p {
+        text-align: left;
+        font-size: 0.9rem;
+    }
+    
+    .header-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .section-tecnologia h2 {
+        text-align: left;
+    }
+
+    .section-tecnologia p {
+        text-align: left;
+    }
+
+    footer img {
+        padding: 0px 130px;
+        max-width: 100%;
+        height: auto;
+    }
 }
