@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Luckiest+Guy&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 150px;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    background-image: url(images/Header.svg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    font-weight: 800;
+    min-width: 320px;
+    text-align: left;
+}
+
+p {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.header-content h1 {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 3.5rem;
+    font-weight: 400;
+    max-width: 400px;
+}
+
+.header-content p {
+    font-size: 1rem;
+    max-width: 757px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.botao {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 28px;
+    background-color: #7289da;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.botao1 {
+    background-color: #ffffff;
+    color: #23272A;
+}
+
+.botao2 {
+    background-color: #23272A;
+}
+
+
+.section-crie {
+    background-color: #ffffff;
+}
+
+.section-aqui {
+    background-color: #F6F6F6;
+}
+
+.section-para {
+    background-color: #ffffff;
+}
+
+.section-tecnologia {
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-tecnologia h2 {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    max-width: 600px;
+    text-align: center;
+}
+
+.section-tecnologia p {
+    min-width: 800px;
+    text-align: center;
+}
+
+footer {
+    background-color: #23272A;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 35px 0;
+}
