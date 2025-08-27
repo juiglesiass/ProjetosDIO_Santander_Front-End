@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="black">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,12 +20,39 @@
 </head>
 <body>
     <header class="header">
+        <nav class="header__nav">
+            <ul class="menu menu--principal">
+                <li class="menu__item">
+                    <a class="menu__link active" href="#home">
+                        <span class="menu__text">Home</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#projetos">
+                        <span class="menu__text">Projetos</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#sobre">
+                        <span class="menu__text">Sobre</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#contato">
+                        <span class="menu__text">Contato</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
         <div class="header__brand">
-            <img class="brand__logo" src="assets/images/favicon/favicon-black/android-chrome-192x192.png" alt="Logo J.">
+            <img class="brand__logo brand__logo__black" src="assets/images/favicon/favicon-black/android-chrome-192x192.png" alt="Logo J.">
+            <img class="brand__logo brand__logo__white" src="assets/images/favicon/favicon-white/android-chrome-192x192.png" alt="Logo J.">
         </div>
-        <i id="toggleTheme" class="bi bi-sun"></i>
+        <div class="header__toggle">
+            <i id="toggleTheme" class="bi bi-sun"></i>
+        </div>
     </header>
-    <nav>
+    <nav class="nav--mobile">
         <ul class="menu menu--mobile">
             <li class="menu__item">
                 <a class="menu__link active" href="#home">
@@ -53,6 +80,9 @@
             </li>
         </ul>
     </nav>
-    <h1>Julia Iglesias</h1>
+    <main></main>
+    <footer>
+        <p>2025. Todos os direitos reservados. Julia Iglesias. Desevolvido por <a href="https://github.com/juiglesiass">JI.</a></p>
+    </footer>
 </body>
 </html>
